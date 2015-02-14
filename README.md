@@ -3,14 +3,14 @@ My perosnal [Ansible](http://docs.ansible.com/) playbooks
 
 ##Configuration
 
-##[Ansible configuration file](http://docs.ansible.com/intro_configuration.html)
+###[Ansible configuration file](http://docs.ansible.com/intro_configuration.html)
 You need the Ansible config file called 'ansible.cfg' with content as follows:
 
     [defaults]
     hostfile       = ./inventory/inventory.ini
 
-##[Inventory](http://docs.ansible.com/intro_inventory.html)
-Create inventory file in folder inventory called 'inventory.ini' with your list of servers
+###[Inventory](http://docs.ansible.com/intro_inventory.html)
+Create inventory file in folder inventory called 'inventory.ini' with your list of servers e.g.
 
     admin@example.com:22
 
