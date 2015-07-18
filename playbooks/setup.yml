@@ -1,0 +1,11 @@
+---
+- hosts: all
+  sudo: true
+  tasks:
+    - name: ntp | Checkout package
+      apt: name=ntpdate state=present
+
+    - name: ntp | Setup cron
+      cron: name=ntpdate cron_file=ntpdate user=root
+            job=ntpdate-debian state=present
+            special_time=hourly
